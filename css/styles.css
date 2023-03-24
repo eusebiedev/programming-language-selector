@@ -15,3 +15,7 @@ body {
 .hidden {
   display: none;
 }
+
+em {
+  color: rgb(211, 29, 228);
+}
