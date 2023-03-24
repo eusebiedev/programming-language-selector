@@ -22,21 +22,24 @@
         <h4>Here we go! Have fun!</h4>
         <form id="survey">
           <div class="col p-1">
-            <label class="input-group-sm" for="name">What's your name?</label>
-              <input id="name" type="text" class="form-control" name="userInput">
+            <label for="name">What's your name?</label>
+              <input id="name" type="text" class="form-control">
 
-            <label for="quest2">Do you like the beach?</label><br>
+            <label for="answer">Do you like the beach?</label><br>
             <label>
-              <input class="form-check-input" type="radio" name="yesno" value="yes">Yes
+              <input class="form-check-input" type="radio" name="answer" value="yes">
+              Yes
             </label>
             <label>
-              <input class="form-check-input" type="radio" name="yesno" value="no">No
+              <input class="form-check-input" type="radio" name="answer" value="no">
+              No
             </label>
           </div>
+
           <div class="col p-1">
-            <label for="song-select">What's your favorite flower?</label>
+            <label for="flower-select">What's your favorite flower?</label>
             <select id="flower" class="form-select form-select-sm">
-              <option selected="">Please-Select-An-Option</option>
+              <option value="">Please-Select-An-Option</option>
               <option value="rose">Rose</option>
               <option value="tulip">Tulip</option>
             </select>
