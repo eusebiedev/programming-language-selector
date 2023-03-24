@@ -1,4 +1,3 @@
-
 function languageSuggestion(event) {
   event.preventDefault();
   const name = document.getElementById("name").value;
@@ -6,7 +5,7 @@ function languageSuggestion(event) {
   const answer = document.querySelector("input[name='answer']:checked").value;
   const answer2 = document.querySelector("input[name='answer2']:checked").value;
   const flower = document.getElementById("flower").value;
-
+  
   let result;
   if (answer === "yes") {
     if (answer2 === "earth") {
@@ -19,8 +18,8 @@ function languageSuggestion(event) {
     }
   }
     else if (answer === "no") {
-      if (answer2 === "mars") {
-      } if (flower === "rose") {
+    if (answer2 === "mars") {
+    } if (flower === "rose") {
       result = "Swift";
     } else if (flower === "tulip") {
       result = "Python";
@@ -29,14 +28,8 @@ function languageSuggestion(event) {
     }
   }
 
-  
-
-  
-
-
-
   document.getElementById("survey").reset();
-  document.querySelector("p#results").innerText = "Hi: " + name + " " + "Your suggestion is: "
+  document.querySelector("p#results").innerText = "Hi " + name + "! " + "Your Programming Language suggestion is: "
   + result;
   document.querySelector("p#results").removeAttribute("class");
 }
