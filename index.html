@@ -13,14 +13,18 @@
   <div class="container p-3">
     <div class="row">
       <div class="col">
-        <h3>Welcome to the Programming Language Survey</h3>
-        <p>Please answer the 5 question survey below. Based on your answers, the questionaire will return a Programming Language suggestion that best suits you!</p>
+        <h1>Welcome to the Programming Language Survey</h1>
+        <p>Please answer the 5 question survey below. Based on your answers, the questionaire will return a Programming Language suggestion between:<strong> Ruby, Python and Swift.</strong></p>
       </div>
     </div>
     <div class="row">
       <div class="col-sm-6">
+        <h4>Here go! Have fun!</h4>
         <form id="survey">
           <div class="col p-1">
+            <label class="input-group-sm" for="name">What's your name?</label>
+              <input id="name" type="text" class="form-control" name="userInput"><br>
+
             <label for="quest2">Do you like the beach?</label><br>
             <label>
               <input class="form-check-input" type="radio" name="yesno" value="yes">Yes
@@ -31,13 +35,13 @@
           </div>
           <div class="col p-1">
             <label for="song-select">What's your favorite flower?</label>
-              <select id="flower" class="form-select form-select-sm">
-                <option selected="">Please-Select-An-Option</option>
-                <option value="rose">Rose</option>
-                <option value="tulip">Tulip</option>
-                <option value="daisy">Daisy</option>
-              </select>
-            </div>
+            <select id="flower" class="form-select form-select-sm">
+              <option selected="">Please-Select-An-Option</option>
+              <option value="rose">Rose</option>
+              <option value="tulip">Tulip</option>
+              <option value="daisy">Daisy</option>
+            </select>
+          </div>
           <button type="submit" class="btn btn-outline-primary btn-small p-1">Submit</button>
         </form>
         <p id="results" class="hidden"></p>
