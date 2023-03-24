@@ -9,34 +9,30 @@
   <link rel="stylesheet" href="css/styles.css" type="text/css">
   <title>Programming Language Selector</title>
 </head>
-<body class="p-3 m-0 border-0">
-  <div class="container.fluid text-center">
-    <div class="row p-3">
-      <div class="col">
-        <div class="card">
-          <div class="card-header">
-            <h3>Welcome to the Programming Language Survey</h3>
-          </div>
-        </div>
+<body class="p-2 m-0 border-0">
+  <div class="container-fluid p-5">
+    <div class="row">
+      <div class="col-sm">
+        <h3>Welcome to the Programming Language Survey</h3>
+        <h6>Please answer the survey below to view your suggestion.</h6>
       </div>
     </div>
-    <div class="row">
-      <div class="col">
+    <div class="row p3">
+      <div class="col-sm-6">
         <form id="survey">
-          <label for="song-select">Please choose a song</label>
-          <select id="song" class="form-select">
-            <option selected="">Please choose a song!</option>
-            <option value="Get on Up">Get On Up</option>
-            <option value="">Two</option>
-            <option value="3">Three</option>
-          </select>
-          <button class="btn btn-primary btn-small" type="submit">Submit</button>
+
+          <label for="song-select">What's your favorite flower?</label>
+          <select id="flower" class="form-select form-select-sm">
+            <option selected="">Please-Select-An-Option</option>
+            <option value="rose">Rose</option>
+            <option value="tulip">Tulip</option>
+            <option value="daisy">Daisy</option>
+          </select><br>
+          <button class="btn btn-outline-primary btn-small p-1" type="submit">Submit</button>
         </form>
         <p id="results" class="hidden"></p>
       </div>
-      
     </div>
-
   </div>
 </body>
 </html>
