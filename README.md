@@ -4,6 +4,8 @@
 
 #### _Programming Language Generator Survey_
 
+#### [Click here to launch the application on GH-Pages](https://eusebiedev.github.io/programming-language-selector/)
+
 ## Technologies Used
 
 * _VS Code_
