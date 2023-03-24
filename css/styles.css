@@ -3,8 +3,13 @@ body {
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.container-fluid {
-  width: 80%;
+.container {
+  margin: auto;
+  width: 100%;
+  border-left: 1px solid #000000;
+  border-right: 1px solid #000000;
+
+  box-sizing: border-box;
 }
 
 .hidden {
