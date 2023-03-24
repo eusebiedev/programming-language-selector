@@ -1,10 +1,7 @@
 
-function survey(event) {
+function suggestion(event) {
   event.preventDefault();
-
-
   const flower = document.getElementById("flower").value;
-
 
 
 
@@ -26,5 +23,5 @@ function survey(event) {
 
 window.addEventListener("load", function () {
   const form = document.getElementById("survey");
-  form.addEventListener("submit", survey);
+  form.addEventListener("submit", suggestion);
 });
