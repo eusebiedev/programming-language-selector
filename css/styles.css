@@ -1,3 +1,12 @@
+body {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container-fluid {
+  width: 80%;
+}
+
 .hidden {
   display: none;
 }
