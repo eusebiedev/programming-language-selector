@@ -25,7 +25,7 @@ function survey(event) {
 
 
 
-  document.querySelector("").innerText = "Language Suggestion: " + " " + result;
+  document.querySelector("p#resutls").innerText = "Language Suggestion: " + " " + result;
   document.querySelector("").removeAttribute("class");
 }
 
