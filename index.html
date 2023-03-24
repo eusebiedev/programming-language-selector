@@ -10,16 +10,21 @@
   <title>Programming Language Selector</title>
 </head>
 <body class="p-2 m-0 border-0">
-  <div class="container-fluid p-5">
+  <div class="container p-3">
     <div class="row">
-      <div class="col-sm">
+      <div class="col">
         <h3>Welcome to the Programming Language Survey</h3>
-        <h6>Please answer the survey below to view your suggestion.</h6>
+        <p>Please answer the quick survey below. Based on your answers, the questionaire will return a Programming Language suggestion that best suits you!</p>
       </div>
     </div>
     <div class="row p3">
       <div class="col-sm-6">
         <form id="survey">
+
+          <label for="">
+            <input class="form-check-input" type="radio" name="age" value="old">
+            Old
+          </label><br>
 
           <label for="song-select">What's your favorite flower?</label>
           <select id="flower" class="form-select form-select-sm">
@@ -28,7 +33,7 @@
             <option value="tulip">Tulip</option>
             <option value="daisy">Daisy</option>
           </select><br>
-          <button class="btn btn-outline-primary btn-small p-1" type="submit">Submit</button>
+          <button type="submit" class="btn btn-outline-primary btn-small p-1">Submit</button>
         </form>
         <p id="results" class="hidden"></p>
       </div>
