@@ -10,16 +10,33 @@
   <title>Programming Language Selector</title>
 </head>
 <body class="p-3 m-0 border-0">
-  <div class="container-fluid">
-    
-
-
-
-
-
-
+  <div class="container.fluid text-center">
+    <div class="row p-3">
+      <div class="col">
+        <div class="card">
+          <div class="card-header">
+            <h3>Welcome to the Programming Language Survey</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <form id="survey">
+          <label for="song-select">Please choose a song</label>
+          <select id="song" class="form-select">
+            <option selected="">Please choose a song!</option>
+            <option value="Get on Up">Get On Up</option>
+            <option value="">Two</option>
+            <option value="3">Three</option>
+          </select>
+          <button class="btn btn-primary btn-small" type="submit">Submit</button>
+        </form>
+        <p id="results" class="hidden"></p>
+      </div>
+      
+    </div>
 
   </div>
-
 </body>
 </html>
