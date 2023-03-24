@@ -5,8 +5,11 @@ function languageSuggestion(event) {
   const yesno = documument.querySelector("input[name='yesno']:checked").value;
   const flower = document.getElementById("flower").value;
 
+  let result;
+  if () {
 
-
+    
+  }
 
 
 
