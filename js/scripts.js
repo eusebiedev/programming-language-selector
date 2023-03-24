@@ -1,7 +1,7 @@
 
-function suggestion(event) {
+function languageSuggestion(event) {
   event.preventDefault();
-  
+  const name = document.getElementById("name").value;
   const yesno = documument.querySelector("input[name='yesno']:checked").value;
   const flower = document.getElementById("flower").value;
 
@@ -25,5 +25,5 @@ function suggestion(event) {
 
 window.addEventListener("load", function () {
   const form = document.getElementById("survey");
-  form.addEventListener("submit", suggestion);
+  form.addEventListener("submit", languageSuggestion);
 });
