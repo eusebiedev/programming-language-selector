@@ -23,22 +23,30 @@
         <form id="survey">
           <div class="col p-1">
             <label for="name">What's your name?</label>
-              <input id="name" type="text" class="form-control">
-
-            <label for="answer">Do you like the beach?</label><br>
+            <input id="name" type="text" class="form-control">
+            <label for="answer2">What planet are you from ?</label><br>
             <label>
-              <input class="form-check-input" type="radio" name="answer" value="yes">
-              Yes
+            <input class="form-check-input" type="radio" name="answer2" value="earth">
+            Earth
             </label>
             <label>
-              <input class="form-check-input" type="radio" name="answer" value="no">
-              No
+            <input class="form-check-input" type="radio" name="answer2" value="mars">
+            Mars
+            </label><br>
+            <label for="answer">Do you like the beach?</label><br>
+            <label>
+            <input class="form-check-input" type="radio" name="answer" value="yes">
+            Yes
+            </label>
+            <label>
+            <input class="form-check-input" type="radio" name="answer" value="no">
+            No
             </label>
           </div>
 
           <div class="col p-1">
             <label for="flower-select">What's your favorite flower?</label>
-            <select id="flower" class="form-select form-select-sm">
+            <select id="flower" class="form-select form-select">
               <option value="">Please-Select-An-Option</option>
               <option value="rose">Rose</option>
               <option value="tulip">Tulip</option>
@@ -46,9 +54,8 @@
           </div>
           <button type="submit" class="btn btn-outline-primary btn-small p-1">Submit</button>
         </form>
-        <div class="col-sm-6">
-          <p id="results" class="hidden"></p>
-          </div>
+        <p id="results" class="hidden"></p>
+        </div>
       </div>
     </div>
   </div>
