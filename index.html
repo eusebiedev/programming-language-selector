@@ -26,12 +26,12 @@
             <label for="name">
               <h5>What's your name?</h5>
             </label>
-            <input id="name" type="text" class="form-control">
+            <input id="name" type="text" class="form-control" required="">
             <div class="col p-1">
-              <label for="os-select">
+              <label for="system">
                 <h5>Are you a Windows or Macintosh user?</h5>
               </label>
-              <select id="system" class="form-select form-select">
+              <select id="system" class="form-select-form-control" required="">
                 <option value="">Please-Select-An-Option</option>
                 <option value="macinstosh">Macintosh</option>
                 <option value="windows">Windows</option>
@@ -42,22 +42,22 @@
                 <h5>Do you like the beach?</h5>
               </label><br>
               <label>
-                <input class="form-check-input" type="radio" name="answer" value="yes">
+                <input type="radio" name="answer" value="yes" class="form-check-input-form-control" required="">
                 Yes
               </label>
               <label>
-                <input class="form-check-input" type="radio" name="answer" value="no">
+                <input type="radio" name="answer" value="no" class="form-check-input-form-control" required="">
                 No
               </label><br>
               <label for="answer2">
                 <h5>What planet are you from?</h5>
               </label><br>
               <label>
-                <input class="form-check-input" type="radio" name="answer2" value="earth">
+                <input type="radio" name="answer2" value="earth" class="form-check-input-form-control" required="">
                 Earth
               </label>
               <label>
-                <input class="form-check-input" type="radio" name="answer2" value="mars">
+                <input type="radio" name="answer2" value="mars" class="form-check-input-form-control" required="">
                 Mars
               </label><br>
             </div>
@@ -66,7 +66,7 @@
             <label for="flower-select">
               <h5>What's your favorite flower?</h5>
             </label>
-            <select id="flower" class="form-select form-select">
+            <select id="flower" class="form-select-form-control" required="">
               <option value="">Please-Select-An-Option</option>
               <option value="rose">Rose</option>
               <option value="tulip">Tulip</option>
