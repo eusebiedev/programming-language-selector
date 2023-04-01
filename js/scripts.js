@@ -27,13 +27,13 @@ function languageSuggestion(event) {
       result = "Ruby";
     } else {
       result = "Please select one";
-    }
   }
 
   document.getElementById("survey").reset();
   document.querySelector("p#results").innerText = "Hi " + name + "! " + "Your Programming Language suggestion is: "
   + result;
   document.querySelector("p#results").removeAttribute("class");
+  }
 }
 
 window.addEventListener("load", function () {
