@@ -7,24 +7,26 @@ function languageSuggestion(event) {
   const flower = document.getElementById("flower").value;
   
   let result;
-  if (answer === "yes") {
+  if (answer === "yes") { //1st branching
     if (answer2 === "earth") {
-    } if (flower === "rose") {
+    } if (flower === "rose") { 
       result = "Ruby";
     } else if (flower === "tulip") {
       result = "Python";
-    } else if (flower === "rose") {
+    } else {
       result = "Swift";
     }
   }
-    else if (answer === "no") {
+  if (answer === "no") {
     if (answer2 === "mars") {
     } if (flower === "rose") {
       result = "Swift";
     } else if (flower === "tulip") {
       result = "Python";
-    } else if (system = "macintosh" || "windows") {
-      result = "Ruby"
+    } else if (system = "macintosh" || "windows") { //change to else
+      result = "Ruby";
+    } else {
+      result = "Please select one";
     }
   }
 
