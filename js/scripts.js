@@ -7,33 +7,33 @@ function languageSuggestion(event) {
   const flower = document.getElementById("flower").value;
   
   let result;
-  if (answer === "yes") { //1st branching
+  if (answer === "yes") {
     if (answer2 === "earth") {
-    } if (flower === "rose") { 
       result = "Ruby";
-    } else if (flower === "tulip") {
+    } else if (system === "macintosh") {
       result = "Python";
+    } else if (flower === "tulip") {
+      result = "C#";
     } else {
       result = "Swift";
     }
   }
   if (answer === "no") {
     if (answer2 === "mars") {
-    } if (flower === "rose") {
-      result = "Swift";
-    } else if (flower === "tulip") {
+      result = "C#";
+    } else if (flower === "rose") {
       result = "Python";
-    } else if (system = "macintosh" || "windows") { //change to else
+    } else if (system === "windows") {
       result = "Ruby";
     } else {
-      result = "Please select one";
+      result = "Swift";
+    }
   }
 
   document.getElementById("survey").reset();
   document.querySelector("p#results").innerText = "Hi " + name + "! " + "Your Programming Language suggestion is: "
   + result;
   document.querySelector("p#results").removeAttribute("class");
-  }
 }
 
 window.addEventListener("load", function () {
