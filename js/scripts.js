@@ -10,7 +10,7 @@ function languageSuggestion(event) {
   if (answer === "yes") {
     if (answer2 === "earth") {
       result = "Ruby";
-    } else if (system === "macintosh" || "windows") {
+    } else if (system === "macintosh" || system === "windows") {
       result = "Python";
     } else if (flower === "rose") {
       result = "C#";
@@ -23,7 +23,7 @@ function languageSuggestion(event) {
       result = "C#";
     } else if (flower === "tulip") {
       result = "Swift";
-    } else if (system === "windows" || "macintosh") {
+    } else if (system === "windows" || system === "macintosh") {
       result = "Ruby";
     } else {
       result = "Python";
