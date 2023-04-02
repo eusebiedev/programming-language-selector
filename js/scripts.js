@@ -10,9 +10,9 @@ function languageSuggestion(event) {
   if (answer === "yes") {
     if (answer2 === "earth") {
       result = "Ruby";
-    } else if (system === "macintosh") {
+    } else if (system === "macintosh" || "windows") {
       result = "Python";
-    } else if (flower === "tulip") {
+    } else if (flower === "rose") {
       result = "C#";
     } else {
       result = "Swift";
@@ -21,12 +21,12 @@ function languageSuggestion(event) {
   if (answer === "no") {
     if (answer2 === "mars") {
       result = "C#";
-    } else if (flower === "rose") {
-      result = "Python";
-    } else if (system === "windows") {
+    } else if (flower === "tulip") {
+      result = "Swift";
+    } else if (system === "windows" || "macintosh") {
       result = "Ruby";
     } else {
-      result = "Swift";
+      result = "Python";
     }
   }
 
